@@ -147,8 +147,21 @@ a:active {
 }
 
 #posts h2{
+	color: #3A474F;
 	margin-top: 10px;
 	margin-bottom: 0px;
+}
+
+#posts h2 a{
+	color: #3A474F;
+}
+#psots h2 a:hover{
+	text-decoration-color: none;
+}
+
+#posts span{
+	color:gray;
+	font-size: 14px;
 }
 
 #footer{
