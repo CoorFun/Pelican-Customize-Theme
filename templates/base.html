@@ -1,63 +1,79 @@
 <!DOCTYPE html>
-<html lang="{{ DEFAULT_LANG }}">
+<html lang="en">
 <head>
-        {% block head %}
-        <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
-        <meta charset="utf-8" />
-        {% if FEED_ALL_ATOM %}
-        <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
-        {% endif %}
-        {% if FEED_ALL_RSS %}
-        <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Full RSS Feed" />
-        {% endif %}
-        {% if FEED_ATOM %}
-        <link href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
-        {% endif %}
-        {% if FEED_RSS %}
-        <link href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
-        {% endif %}
-        {% if CATEGORY_FEED_ATOM and category %}
-        <link href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_ATOM|format(category.slug) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Categories Atom Feed" />
-        {% endif %}
-        {% if CATEGORY_FEED_RSS and category %}
-        <link href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_RSS|format(category.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Categories RSS Feed" />
-        {% endif %}
-        {% if TAG_FEED_ATOM and tag %}
-        <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM|format(tag.slug) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Tags Atom Feed" />
-        {% endif %}
-        {% if TAG_FEED_RSS and tag %}
-        <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Tags RSS Feed" />
-        {% endif %}
-        {% endblock head %}
+    <title>CoorFang's Blog</title>
+    <!--for debugging-->
+    <meta http-equiv="cache-control" content="no-cache,no-store, must-revalidate" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/font-awesome.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/font-awesome.min.css" type="text/css">
 </head>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="{{ SITEURL }}/">{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a></h1>
-        </header><!-- /#banner -->
-        <nav id="menu"><ul>
-        {% for title, link in MENUITEMS %}
-            <li><a href="{{ link }}">{{ title }}</a></li>
-        {% endfor %}
-        {% if DISPLAY_PAGES_ON_MENU %}
-          {% for p in pages %}
-            <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
-          {% endfor %}
-        {% else %}
-          {% if DISPLAY_CATEGORIES_ON_MENU %}
-            {% for cat, null in categories %}
-              <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
-            {% endfor %}
-          {% endif %}
-        {% endif %}
-        </ul></nav><!-- /#menu -->
-        {% block content %}
-        {% endblock %}
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
-                which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
-        </footer><!-- /#contentinfo -->
+<body>
+    <div id="container-top">
+        <div id="top-nav">
+            <nav class="function">
+                <li><a href="./profile">ABOUT ME</a></li>
+                <li><a href="cv.pdf">CV</a></li>
+                <li><a href="./cn">简体中文</a></li>
+            </nav>
+            <nav class="social">
+                <li>
+                <a href="https://www.instagram.com/coorfang/">
+                <i class="fa fa-instagram" aria-hidden="true">
+                </i></a></li>
+                <li><a href="#"><i class="fa fa-weibo" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            </nav>
+        </div>
+    </div>
+    <div id="container-banner">
+        <div id="profile">
+            
+        </div>
+        <div id="subtitle">
+            <p>方可 / Coor Fang</p>
+            <p>Graduate @ISEP/ Hardwear Engineer @NXEZ</p>
+        </div>
+    </div>
+    <div id="container-body">
+        <div id="container-main">
+            <div id="main-nav">
+                <nav>
+                    <li><a href="">All</a></li>
+                    <li><a href="">Tech</a></li>
+                    <li><a href="">Life</a></li>
+                    <li><a href="">Project</a></li>
+                    <li><a href="">Travel</a></li>
+                </nav>
+            </div>
+            <div id="posts">
+                <h2><a href="">瑞士滑雪小记</a></h2>
+                <span class="post-data">Tue 07 March 2017</span>
+
+                <h2><a href="">我的第一篇Pelican测试文章</a></h2>
+                <span class="post-data">Tue 06 March 2017</span>
+                
+            </div>
+            <div id="footer">
+                <p>
+                    <img src="https://img.shields.io/badge/Posts-41-brightgreen.svg">
+                    <img src="https://img.shields.io/badge/Comments-25-blue.svg">
+                </p>
+                <p>
+                    <img src="https://img.shields.io/badge/Hosted-GitHub-orange.svg">
+                    <img src="https://img.shields.io/badge/Power by-Pelican-green.svg">
+                </p>
+                <p>
+                    <img src="https://img.shields.io/badge/Version-1.0-ff69b4.svg">
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--Contents-->
 </body>
 </html>
