@@ -6,7 +6,7 @@ I made this Pelican theme specially for my own blog(coorfun.com).
 - Simplified outlooking
 - Profile photo
 - Seperated navigation bars
-----------
+
 # Develop Diary
 
 ## 2017, 3, 11
