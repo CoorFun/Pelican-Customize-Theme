@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ DEFAULT_LANG }}">
 <head>
-    <title>CoorFang's Blog</title>
-    <!--for debugging-->
+    <meta charset="utf-8" />
+    <title>{% block title %}{{ SITENAME }}{%endblock%}</title>
+    <!--for debugging
     <meta http-equiv="cache-control" content="no-cache,no-store, must-revalidate" />
     <meta http-equiv="pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Expires" content="0" />-->
+    {% if FEED_ALL_ATOM %}
+    <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
+    {% endif %}
+    {% if FEED_ALL_RSS %}
+    <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
+    {% endif %}
 
-
-    <link rel="stylesheet" href="../static/css/style.css">
-    <link rel="stylesheet" href="../static/css/font-awesome.css" type="text/css">
-    <link rel="stylesheet" href="../static/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/style.css">
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/font-awesome.css" type="text/css">
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/font-awesome.min.css" type="text/css">
 </head>
 
 <body>
@@ -48,25 +54,16 @@
                 <nav>
                     <li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
                     <li><a href="">All</a></li>
-                    <li><a href="">Tech</a></li>
-                    <li><a href="">Life</a></li>
-                    <li><a href="">Project</a></li>
-                    <li><a href="">Travel</a></li>
+                    {% if DISPLAY_CATEGORIES_ON_MENU -%}
+                    {% for cat, null in categories %}
+                    <li{% if cat == category %} {% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+                    {% endfor %}
+                    {% endif %}
                 </nav>
             </div>
-            <div id="posts">
-
-                <h2><a href="">瑞士滑雪小记</a></h2>
-                <span class="post-data"><i class="fa fa-calendar" aria-hidden="true"></i> Tue 07 March 2017</span>
-                <span class="post-data"><i class="fa fa-comments-o" aria-hidden="true"></i> Comments: 20</span>
-
-                <h2><a href="">Filco Minila Air机械键盘评测</a></h2>
-                <span class="post-data"><i class="fa fa-calendar" aria-hidden="true"></i> Tue 06 March 2017</span>
-                
-                <h2><a href="">我的第一篇Pelican测试文章</a></h2>
-                <span class="post-data"><i class="fa fa-calendar" aria-hidden="true"></i> Tue 06 March 2017</span>
-
-            </div>
+            
+            {% block content %}
+            {% endblock %}
             <div id="footer">
                 <p>
                     <img src="https://img.shields.io/badge/Posts-41-brightgreen.svg">

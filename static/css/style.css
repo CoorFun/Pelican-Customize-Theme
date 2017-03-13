@@ -156,11 +156,11 @@ a:active {
 }
 
 #posts h2 a{
-	text-decoration: none;
 	color: #3A474F;
 }
 #psots h2 a:hover{
 	text-decoration-color: none;
+	color: #3A474F;
 }
 
 #posts span{
