@@ -7,7 +7,7 @@ I made this Pelican theme specially for my own blog(coorfun.com).
 - Profile photo
 - Seperated navigation bars
 
-# Develop Diary
+# Developping Diary
 
 ## 2017, 3, 11
 - [x] Read the documents from Pelican and Jinja.
