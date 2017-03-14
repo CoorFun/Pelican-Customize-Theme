@@ -52,7 +52,7 @@
                     <li><a href="{{ SITEURL }}/">All</a></li>
                     {% if DISPLAY_CATEGORIES_ON_MENU -%}
                     {% for cat, null in categories %}
-                    <li{% if cat == category %} {% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+                    <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
                     {% endfor %}
                     {% endif %}
                 </nav>

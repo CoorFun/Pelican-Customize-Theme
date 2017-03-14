@@ -137,36 +137,49 @@ a:active {
 	font-size: 13px;
 }
 
+#main-nav .active a,
 #main-nav nav li a:hover{
 	color: #3A474F;
 }
 
-#posts{
+.posts{
 	padding-top: 10px;
 	padding-bottom:15px; 
 	color: #3A474F;
 	border-bottom: solid 1px #3A474F;
 }
 
-#posts h2{
-	font-weight: normal;
+.article h2,
+.posts h2{
 	color: #3A474F;
 	margin-top: 10px;
 	margin-bottom: 0px;
 }
 
-#posts h2 a{
+.posts h2 a{
 	color: #3A474F;
+	font-weight: normal;
 }
-#psots h2 a:hover{
+.psots h2 a:hover{
 	text-decoration-color: none;
 	color: #3A474F;
 }
 
-#posts span{
+.article span,
+.posts span{
 	color: gray;
 	font-size: 14px;
 	padding-right: 15px;
+}
+
+.entry-content {
+	color: #3A474F;
+	font-weight: normal;
+}
+
+.entry-content h2{
+	color: #3A474F;
+	font-weight: normal;
 }
 
 #footer{
