@@ -2,7 +2,7 @@
 
 I made this Pelican theme specially for my own blog(coorfun.com). If you want to use or modify, do not be hestitated to fork to your repository.
 
-# Features (Planning)
+# Features (Planning)
 - Extreme simple and clean theme
 - Support profile photo
 - Support Disque comment
