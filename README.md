@@ -8,10 +8,10 @@ I made this Pelican theme specially for my own blog(coorfun.com). If you want to
 - Support Disque comment
 - Duel navigation bars
 
-### Social icons 
-Set your configuration in the pelicanconfig.py file.
+> ### Social icons 
+> Set your configuration in the **pelicanconfig.py** file.
 
-Please note that all the social media name must be in lower case.
+> Please note that all the social media name must be in lower case.
 
 An example: 
 
