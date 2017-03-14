@@ -23,19 +23,15 @@
     <div id="container-top">
         <div id="top-nav">
             <nav class="function">
-                <li><a href="./profile">ABOUT ME</a></li>
-                <li><a href="cv.pdf">CV</a></li>
-                <li><a href="./cn">简体中文</a></li>
+                {% for name, link in LINKS %}
+                    <li><a href="{{ link }}">{{ name }}</a></li>
+                {% endfor %}
             </nav>
             <nav class="social">
-                <li>
-                <a href="https://www.instagram.com/coorfang/">
-                <i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                <li>
-                <a href="http://weibo.com/1847796960/">
-                <i class="fa fa-weibo" aria-hidden="true"></i></a></li>
-                <li><a href="https://github.com/CoorFun/">
-                <i class="fa fa-github" aria-hidden="true"></i></a></li>
+                {% for name, link in SOCIAL %}
+                    <li><a href="{{ link }}">
+                    <i class="fa fa-{{ name }}" aria-hidden="true"></i></a></li>
+                {% endfor %}
             </nav>
         </div>
     </div>
@@ -53,7 +49,7 @@
             <div id="main-nav">
                 <nav>
                     <li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
-                    <li><a href="">All</a></li>
+                    <li><a href="{{ SITEURL }}/">All</a></li>
                     {% if DISPLAY_CATEGORIES_ON_MENU -%}
                     {% for cat, null in categories %}
                     <li{% if cat == category %} {% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
@@ -61,7 +57,7 @@
                     {% endif %}
                 </nav>
             </div>
-            
+
             {% block content %}
             {% endblock %}
             <div id="footer">
