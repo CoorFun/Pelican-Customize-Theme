@@ -8,7 +8,23 @@ I made this Pelican theme specially for my own blog(coorfun.com). If you want to
 - Support Disque comment
 - Duel navigation bars
 
+### Social icons 
+Set your configuration in the pelicanconfig.py file.
+
+Please note that all the social media name must be in lower case.
+
+An example: 
+
+    SOCIAL = 
+    (('github', 'https://github.com/xxx/'),
+    ('weibo', 'http://weibo.com/xxx/'),
+    ('instagram', 'https://www.instagram.com/xxx/'))
+
 # Developping Diary
+
+## 2017, 3, 14
+- [x] Dynamic navigation.
+- [x] Dynamic social icons.
 
 ## 2017, 3, 13
 - [x] Modified color.
