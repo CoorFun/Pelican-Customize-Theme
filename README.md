@@ -13,7 +13,7 @@ I made this Pelican theme specially for my own blog(coorfun.com).
 - [x] Modified color
 - [x] Embedded Python code
 - [x] Tested by Pelican tools
-- [ ] Social icons are dynamic
+- [ ] Social icons are dynamic
 
 ## 2017, 3, 12
 - [x] Transfered the layout hand draft into HTML&CSS code.
