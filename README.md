@@ -22,8 +22,14 @@ An example:
 
 # Developping Diary
 
-## 2017, 3, 15
+## 2017, 3, 16
+- [ ] Disque comment function.
+- [ ] Statistic of articles.
+- [ ] Statistic of comments.
 
+## 2017, 3, 15
+- [x] Add "Microsoft Yahei" font for windows, "PingFang SC" for Mac.
+> PS: ```font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;```
 
 ## 2017, 3, 14
 - [x] Dynamic navigation.
@@ -34,7 +40,6 @@ An example:
 - [x] Modified color.
 - [x] Embedded Python code.
 - [x] Tested by Pelican tools.
-- [ ] Dynamic social icons.
 
 ## 2017, 3, 12
 - [x] Transfered the layout hand draft into HTML&CSS code.
