@@ -22,11 +22,14 @@ An example:
 
 # Developping Diary
 
-## 2017, 3, 16
+## Main goals left
 - [ ] Disque comment function.
 - [ ] Statistic of articles.
 - [ ] Statistic of comments.
 - [ ] Test Markdown style.
+
+## 2017, 3, 16
+- [x] Wrote the test article - Pelican tutorial.
 
 ## 2017, 3, 15
 - [x] Add "Microsoft Yahei" font for windows, "PingFang SC" for Mac.
