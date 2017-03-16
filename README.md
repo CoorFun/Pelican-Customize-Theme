@@ -27,6 +27,7 @@ An example:
 - [ ] Statistic of articles.
 - [ ] Statistic of comments.
 - [ ] Test Markdown style.
+- [ ] Small bug when picture width is bigger than 760px.
 
 ## 2017, 3, 16
 - [x] Wrote the test article - Pelican tutorial.
