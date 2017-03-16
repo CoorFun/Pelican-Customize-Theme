@@ -26,6 +26,7 @@ An example:
 - [ ] Disque comment function.
 - [ ] Statistic of articles.
 - [ ] Statistic of comments.
+- [ ] Test Markdown style.
 
 ## 2017, 3, 15
 - [x] Add "Microsoft Yahei" font for windows, "PingFang SC" for Mac.
