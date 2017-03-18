@@ -50,7 +50,7 @@
             <div id="main-nav">
                 <nav>
                     <li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
-                    <li {% if page_name == 'index' %} class="active"{% endif %}><a href="{{ SITEURL }}">Index</a></li>
+                    <li {% if page_name == 'index' %} class="active"{% endif %}><a href="{{ SITEURL }}">All</a></li>
                     {% if DISPLAY_CATEGORIES_ON_MENU -%}
                     {% for cat, null in categories %}
                     <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
