@@ -1,6 +1,6 @@
 # Pelican-Customize-Theme
 
-I made this Pelican theme specially for my own blog(coorfun.com). If you want to use or modify, do not be hestitated to fork to your repository.
+I made this Pelican theme specially for my own [Blog](coorfun.com). If you want to use or modify, do not be hestitated to fork to your repository.
 
 # Features (Planning)
 - Extreme simple and clean theme
@@ -22,15 +22,29 @@ An example:
 
 # Developping Diary
 
+## Main goals left
+- [ ] Disque comment function.
+- [ ] Statistic of articles.
+- [ ] Statistic of comments.
+- [ ] Test Markdown style.
+- [ ] Small bug when picture width is bigger than 760px.
+
+## 2017, 3, 16
+- [x] Wrote the test article - Pelican tutorial.
+
+## 2017, 3, 15
+- [x] Add "Microsoft Yahei" font for windows, "PingFang SC" for Mac.
+> PS: ```font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;```
+
 ## 2017, 3, 14
 - [x] Dynamic navigation.
 - [x] Dynamic social icons.
+> PS: Icons from [Font Awsome](http://fontawesome.io/icons/).
 
 ## 2017, 3, 13
 - [x] Modified color.
 - [x] Embedded Python code.
 - [x] Tested by Pelican tools.
-- [ ] Dynamic social icons.
 
 ## 2017, 3, 12
 - [x] Transfered the layout hand draft into HTML&CSS code.
