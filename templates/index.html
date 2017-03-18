@@ -7,8 +7,8 @@
 <div class="posts">
 {% for article in articles_page.object_list %}
     <h2><a href="{{ SITEURL }}/{{ article.url }}" title="{{ article.title|striptags }}">{{ article.title }}</a></h2>
-    <span class="post-data"><i class="fa fa-calendar" aria-hidden="true"></i> {{ article.locale_date }}</span>
-    <span class="post-data"><i class="fa fa-comments-o" aria-hidden="true"></i> Comments: </span>
+    <span class="article-title-span"><i class="fa fa-calendar" aria-hidden="true"></i> {{ article.locale_date }}</span>
+    <span class="article-title-span"><i class="fa fa-comments-o" aria-hidden="true"></i> Comments: </span>
 {% endfor %}
 </div>
 
