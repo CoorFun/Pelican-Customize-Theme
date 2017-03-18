@@ -24,8 +24,10 @@ An example:
 
 ## Main goals left
 - [ ] Disque comment function.
-- [ ] Statistic of articles.
 - [ ] Statistic of comments.
+
+## 2017, 3, 19
+- [x] Statistic of articles.
 
 ## 2017, 3, 18
 - [x] Add style for mardkwon contents.
