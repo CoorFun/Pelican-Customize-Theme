@@ -26,8 +26,13 @@ An example:
 - [ ] Disque comment function.
 - [ ] Statistic of articles.
 - [ ] Statistic of comments.
-- [ ] Test Markdown style.
-- [ ] Small bug when picture width is bigger than 760px.
+
+## 2017, 3, 18
+- [x] Add style for mardkwon contents.
+- [x] Small bug when picture width is bigger than 760px.(Fixed)
+
+## 2017, 3, 17
+- [x] Finished test article
 
 ## 2017, 3, 16
 - [x] Wrote the test article - Pelican tutorial.
