@@ -23,8 +23,11 @@ An example:
 # Developping Diary
 
 ## Main goals left
-- [ ] Disque comment function.
-- [ ] Statistic of comments.
+- [ ] add links for friends
+
+## 2017, 3, 20
+- [x] Disque comment function.
+- [x] Statistic of comments.
 
 ## 2017, 3, 19
 - [x] Statistic of articles.
